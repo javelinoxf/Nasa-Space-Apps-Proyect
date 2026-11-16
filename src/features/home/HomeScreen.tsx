@@ -100,10 +100,29 @@ export function HomeScreen({ onOpenAnalogMap, onOpenGeneralMap, onOpenPlanetMap 
           </div>
         </section>
 
-        <p className="mt-6 text-center text-[11px] text-slate-600">
+        <p className="mt-6 text-center text-[11px] text-slate-500">
           Planetary sites reuse the existing region presets. Earth analog locations are configured
           for comparison; their scientific equivalence should be independently assessed.
         </p>
+
+        <footer className="mt-10 border-t border-slate-800 pt-5 text-center text-xs leading-relaxed text-slate-500">
+          <p className="font-medium text-slate-400">Independent educational project</p>
+          <p className="mx-auto mt-1 max-w-2xl">
+            Selene &amp; Ares Explorer is an independent project and is not an official NASA,
+            USGS, or other government website. NASA and USGS names identify data sources only.
+          </p>
+          <nav aria-label="Project data sources" className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <a href="https://trek.nasa.gov/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 underline decoration-cyan-800 underline-offset-4 hover:text-cyan-300">
+              NASA Solar System Treks
+            </a>
+            <a href="https://astrogeology.usgs.gov/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 underline decoration-cyan-800 underline-offset-4 hover:text-cyan-300">
+              USGS Astrogeology
+            </a>
+            <a href="https://github.com/javelinoxf/Nasa-Space-Apps-Proyect" target="_blank" rel="noopener noreferrer" className="text-cyan-400 underline decoration-cyan-800 underline-offset-4 hover:text-cyan-300">
+              Source code
+            </a>
+          </nav>
+        </footer>
       </div>
     </main>
   );
